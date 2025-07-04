@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "prod-django"
+version = "0.1.0"
+description = ""
+authors = ["Vadim <vadeivanof91@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+django = "4.2.0"
+djangorestframework = "^3.16.0"
+django-filter = "^25.1"
+django-debug-toolbar = "4.0.0"
+pillow = "^11.3.0"
+gunicorn = "^23.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
