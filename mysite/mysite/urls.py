@@ -20,6 +20,7 @@ from django.urls import path, include
 from django.contrib.sitemaps.views import sitemap
 
 from .sitemaps import sitemaps
+from .views import StartPageView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -32,7 +33,8 @@ urlpatterns = [
         sitemap,
         {"sitemaps": sitemaps},
         name="django.contrib.sitemaps.views.sitemap",
-    )
+    ),
+    path('', StartPageView.as_view(), name='startpage'),
 ]
 
 if settings.DEBUG:

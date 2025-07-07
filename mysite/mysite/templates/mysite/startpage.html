@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Start page</title>
+</head>
+<body>
+    <h1>Start Page</h1>
+    <div>
+        <a href="{% url 'shopapp:index' %}">ShopApp</a>
+    </div>
+    <div>
+        <a href="{% url 'myauth:login' %}">Login (myauth)</a>
+    </div>
+    <div>
+        <a href="{% url 'blogapp:articles' %}">BlogApp</a>
+    </div>
+</body>
+</html>
